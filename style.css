@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-header{
+  display:flex;
+  font-family: 'Poppins', sans-serif;
+  background-color: salmon;
+  color: rgb(37, 31, 116);
+  letter-spacing: 5px;
+  font-size: 20px;
+  height: 6rem;
+  text-transform: uppercase;
+}
+.burger{
+  display:table;
+  position: relative;
+  top: 55%;
+  cursor: pointer;
+  left: -7.8%;
+}
+.line1,
+.line2,
+.line3{
+  width: 27px;
+  height: 3px;
+  background-color: rgb(37, 31, 116);
+  margin: 5px 5px;
+  transition: all 0.5s ease;
+}
+.header{
+  font-weight: bold;
+  display: table;
+  position: relative;
+  left: 38%;
+  top: 40%;
+}
+.nav-links{
+  float: left;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  width: 200px;
+  height: 565px;
+  transition: transform 0.5s ease-in;
+  transform: translateX(-100%);
+}
+.nav-links-list{
+  width: 100%;
+  display: flex;
+  background-color: rgb(216, 219, 41);
+  flex-direction: column;
+  justify-content:space-around;
+  height: 100%;
+}
+.nav-links li{
+  display: inline-block;
+  list-style: none;
+  opacity: 0;
+}
+.nav-links-list a{
+  display: block;
+  color: rgb(37, 31, 116);
+  text-align: center;
+  padding: 6% 0;
+  height: 100%;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.nav-active{
+  transform: translateX(0%);
+}
+.a:link{
+  color: red;
+}
+.a:visited{
+  color: rgb(37, 31, 116);
+}
+.a:hover::after{
+  width: 100%;
+  transition: width .4s;
+}
+.a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(37, 31, 116);
+  transition: width .3s;
+}
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+.contact{
+  display: inline-flex;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  width: 250px;
+  height: 100px;
+  position: relative;
+  left: 64%;
+  top: 445px;
+}
+.contact-header{
+  background-color: salmon;
+}
+.contact-header-title{
+  font-weight: bold;
+  text-align: center;
+}
+.contact-content{
+  background-color: rgb(216, 219, 41);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-content-email{
+  font-size: 0.7rem;
+  font-weight: bold;
+  color:purple;
+}
+.email:hover{
+  text-decoration: underline;
+  color: red;
+  cursor: pointer;
+}
+.section{
+  display: inline-flex;
+  flex-direction: column;
+  width: 250px;
+  height: 150px;
+  position: relative;
+  left: 45.4%;
+  top: 205px;
+}
+.section-header{
+  background-color: salmon;
+}
+.section-header-title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.section-content{
+  background-color: rgb(216, 219, 41);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.wb-1,
+.wb-2{
+  width: 80px;
+}
+.caption{
+  font-weight: bold;
+  font-size: 0.7rem;
+  color:rgb(17, 70, 231);
+  display:block;
+  font-style: italic;
+}
+.section-content-wb-1:hover,
+.section-content-wb-2:hover{
+  cursor: pointer;
+  filter: contrast(200%);
+}
+.lecture{
+  display:inline-flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  width: 800px;
+  position: absolute;
+  left: 18%;
+  top: 18%;
+}
+.lecture-header-title-1,
+.lecture-header-title-2
+{
+  font-weight: bold;
+  font-size: 2rem;
+}
+.lecture-content-text-1,
+.lecture-content-text-2{
+  font-weight: 900;
+}
+.lecture-img-1,
+.lecture-img-2{
+  width: 350px;
+}
+.description{
+  font-family: 'Poppins', sans-serif;
+  display: inline-flex;
+  flex-direction: column;
+  width: 250px;
+  height: 90px;
+  position: relative;
+  top: 25px;
+  left: 26.78%;
+}
+.description-header{
+  background-color: salmon;
+}
+.description-header-title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+.description-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(216, 219, 41);
+  width: 100%;
+  height: 100%;
+}
+.description-content-text{
+  font-weight: bold;
+  font-size: 0.9rem;
+  color:firebrick;
+}
+.description-content-text-tabs{
+  color: green;
+}
